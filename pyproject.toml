@@ -1,0 +1,25 @@
+
+[project]
+name = "scientific-computing-ml"
+version = "0.1.0"
+description = "Scientific computing, data engineering, and machine learning curriculum"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "jupyterlab",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
