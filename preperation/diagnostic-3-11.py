@@ -1,9 +1,5 @@
 measurements = [12, 15, 9, 18, 21, 7, 16]
-new_measurements = []
-for m in measurements:
-    if m > 14:
-        new_measurements.append(m**2)
-
+new_measurements = [m**2 for m in measurements if m > 14]
 print(new_measurements)
 
 # Conceptual questions:
